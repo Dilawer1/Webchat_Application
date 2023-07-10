@@ -1,0 +1,12 @@
+CREATE DATABASE messaging_app;
+USE messaging_app;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fullname VARCHAR(255) NOT NULL,
+  username VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  dob DATE NOT NULL,
+  mobile VARCHAR(20) NOT NULL
+);
