@@ -1,5 +1,5 @@
-CREATE DATABASE messaging_app;
-USE messaging_app;
+CREATE DATABASE webchatdb;
+USE webchatdb;
 
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,

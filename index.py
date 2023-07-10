@@ -21,12 +21,13 @@ def home():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        name = request.form['name']
-        email = request.form['email']
-        phone = request.form['phone']
+        name = request.form['Full Name']
+        email = request.form['Email']
+        phone = request.form['Phone']
         password = request.form['password']
-        confirm_password = request.form['confirm_password']
-        dob = request.form['dob']
+        confirm_password = request.form['Confirm_password']
+        dob = request.form['Date of Birth']
+        mobile = request.form[ 'Mobile Number']
 
         # Check if the email already exists in the database
         with db.cursor() as cursor:
@@ -66,7 +67,7 @@ def login():
                 error = "Invalid email or password. Please try again."
                 return render_template('login.html', error=error)
     else:
-        return render_template('login.html')
+        return render_template('login.html ./templates')
 
 @app.route('/dashboard')
 def dashboard():
