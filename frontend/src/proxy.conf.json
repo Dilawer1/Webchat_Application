@@ -1,0 +1,12 @@
+{
+    "/backend": {
+      "target": "http://backend:3000",
+      "secure": false,
+      "changeOrigin": true
+    },
+    "/socket.io/": {
+      "target": "http://backend:3000",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
